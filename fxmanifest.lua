@@ -9,7 +9,7 @@ lua54 'yes'
 
 -- Define shared files
 shared_scripts {
-    '@ox_lib/init.lua', -- dependency
+    '@ox_lib/init.lua', ----Dependency
     --'shared/main.lua',
     --'shared/utils.lua',
     --'shared/enums.lua',
@@ -18,7 +18,8 @@ shared_scripts {
 
 -- Server-side scripts
 server_scripts {
-    '@oxmysql/lib/MySQL.lua', -- Database library
+    '@oxmysql/lib/MySQL.lua', ----Database library
+    'sv/vcheck.lua'           ----version check
     --'sv/main.lua',
     --'sv/auth.lua',
     --'sv/database.lua',
